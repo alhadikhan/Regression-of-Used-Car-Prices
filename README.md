@@ -1,43 +1,34 @@
-# Regression-of-Used-Car-Prices
+# Regression of Used Car Prices
 
 This repository contains a machine learning project aimed at predicting the prices of used cars based on various features. The project leverages data preprocessing, feature engineering, and regression modeling to deliver accurate price predictions.
 
-## Table of Contents
+## Project Overview
 
-- [Technologies Used](#technologies-used)
-- [Dataset](#dataset)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+The primary goal of this project is to develop a predictive model for used car prices using a variety of regression techniques. The dataset includes various features such as car brand, model, year, mileage, fuel type, and more.
 
-## Technologies Used
+## Models Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib (for visualization)
-- Jupyter Notebook
+In this project, multiple regression models were implemented and evaluated, including:
 
-## Dataset
+1. **Gradient Boosting Regressor (GBR)**: The best-performing model, which outperformed all other regression techniques in predicting used car prices.
+2. **Neural Network Regressor (MLPRegressor)**: A feedforward neural network used for regression, with hyperparameter tuning for optimization.
+3. **Linear Regression**: Implemented using cuML for GPU acceleration to evaluate its performance on the dataset.
+4. **Lasso Regression**: Utilized with hyperparameter tuning to improve performance and assess feature importance.
+5. **Random Forest Regressor**: Employed for its ensemble learning capabilities and feature importance analysis.
+6. **Support Vector Machine (SVM)**: Applied for regression tasks to explore its predictive power.
+7. **K-Nearest Neighbors (KNN)**: Used as a comparison model to evaluate performance against other algorithms.
 
-The dataset consists of used car listings with various features such as fuel type, brand, model, transmission type, and condition. The data is divided into training and test sets, with the training set used for model training and the test set for final predictions.
+## Key Findings
 
-## Features
+- The **Gradient Boosting Regressor (GBR)** consistently outperformed other models, demonstrating superior accuracy in predicting used car prices.
+- Hyperparameter tuning was crucial for optimizing model performance, particularly for the neural network and Lasso regression models.
 
-- **Data Cleaning**: Handling missing values and outlier detection.
-- **Feature Engineering**: Creating new features and transforming categorical variables using Label Encoding.
-- **Data Standardization**: Scaling features for better model performance.
-- **Model Selection**: Training a Gradient Boosting Regressor to predict car prices.
-- **Evaluation Metrics**: Assessing model performance using MSE, RMSE, and R² score.
+## Getting Started
 
-## Installation
-
-1. Clone the repository:
+1. Clone the repository: 
    ```bash
    git clone https://github.com/yourusername/Regression-of-Used-Car-Prices.git
+
    cd Regression-of-Used-Car-Prices
 2. Install the required packages:
 
